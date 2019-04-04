@@ -18,4 +18,6 @@ function actionWhenFound() {
   console.log("Found Waldo at index of", actionWhenFound.index);
 }
 
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], function(result) {
+  console.log("The result is:", result);
+});
